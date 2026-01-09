@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -71,7 +70,7 @@
         base_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "BASE";
+            label = "Base";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -85,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q         &kp W        &kp E       &kp R        &kp T        &kp Y    &kp U        &kp I       &kp O        &kp P
-            &mt LSHIFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F   &kp G        &kp H    &mt RGUI J   &mt RALT K  &mt RCTRL L  &mt RSHFT SEMICOLON
-&kp ESCAPE  &kp Z         &kp X        &kp C       &kp V        &kp B        &kp N    &kp M        &kp COMMA   &kp DOT      &kp FSLH             &kp BSLH
-                                       &kp DEL     &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+            &kp Q         &kp W        &kp E       &kp R        &kp T          &kp Y            &kp U        &kp I       &kp O        &kp P
+            &mt LSHIFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F   &kp G          &kp H            &mt RGUI J   &mt RALT K  &mt RCTRL L  &mt RSHFT SEMICOLON
+&kp ESCAPE  &kp Z         &kp X        &kp C       &kp V        &kp B          &kp N            &kp M        &kp COMMA   &kp DOT      &kp FSLH             &kp BSLH
+                                       &kp DEL     &lt NAV TAB  &lt 3 SPACE    &lt 3 BACKSPACE  &lt SYM ESC  &kp BSPC
             >;
         };
 
@@ -123,7 +122,7 @@
         sim_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            label = "SIM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -146,10 +145,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        adjust_layer {
+        sfn_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "ADJ";
+            label = "SpaceFN";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -163,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp C_BRI_DN   &kp C_BRI_UP              &kp C_MUTE        &kp C_VOL_DN               &kp C_VOL_UP
+        &trans  &trans  &trans  &trans  &trans    &kp LEFT       &kp DOWN                  &kp UP_ARROW      &kp RIGHT                  &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RA(SLASH)  &kp LG(LS(LEFT_BRACKET))  &kp LC(UP_ARROW)  &kp LG(LS(RIGHT_BRACKET))  &kp C_PREV    &kp C_PP
+                        &trans  &trans  &trans    &kp ENTER      &trans                    &trans
             >;
         };
 
