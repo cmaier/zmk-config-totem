@@ -30,6 +30,46 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    behaviors {
+        lp: lp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <260>;
+            tapping-term-ms = <300>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <260>;
+            tapping-term-ms = <300>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,10 +92,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q         &kp W        &kp E       &kp R       &kp T          &kp Y            &kp U       &kp I       &kp O        &kp P
-            &mt LSHIFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &kp G          &kp H            &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMICOLON
-&kp ESCAPE  &kp Z         &kp X        &kp C       &kp V       &kp B          &kp N            &kp M       &kp COMMA   &kp DOT      &kp FSLH             &kp SQT
-                                       &trans      &lt 2 TAB   &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1       &trans
+            &kp Q          &kp W         &kp E        &lp LG(R) R  &lp LG(T) T    &kp Y            &kp U        &kp I        &kp O         &kp P
+            &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G          &kp H            &hmr RGUI J  &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMICOLON
+&kp ESCAPE  &kp Z          &kp X         &lp LG(C) C  &lp LG(V) V  &kp B          &lp LG(N) N      &kp M        &kp COMMA    &kp DOT       &kp FSLH              &kp SQT
+                                         &trans       &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &trans
             >;
         };
 
