@@ -95,7 +95,7 @@
             &kp Q          &kp W         &kp E        &lp LG(R) R  &lp LG(T) T    &kp Y            &kp U        &kp I        &kp O         &kp P
             &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G          &kp H            &hmr RGUI J  &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMICOLON
 &kp ESCAPE  &kp Z          &kp X         &lp LG(C) C  &lp LG(V) V  &kp B          &lp LG(N) N      &kp M        &kp COMMA    &kp DOT       &kp FSLH              &kp SQT
-                                         &trans       &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &trans
+                                         &mo 4        &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &kp DELETE
             >;
         };
 
@@ -173,8 +173,30 @@
         &trans  &trans  &trans  &trans  &trans           &kp C_BRI_DN   &kp C_BRI_UP              &kp C_MUTE        &kp C_VOL_DN               &kp C_VOL_UP
         &trans  &trans  &trans  &trans  &trans           &kp LEFT       &kp DOWN                  &kp UP_ARROW      &kp RIGHT                  &kp C_NEXT
 &trans  &trans  &trans  &trans  &trans  &kp RA(SLASH)    &kp RA(SLASH)  &kp LG(LS(LEFT_BRACKET))  &kp LC(UP_ARROW)  &kp LG(LS(RIGHT_BRACKET))  &kp C_PREV    &kp C_PP
-                        &trans  &trans  &kp SPACE        &kp ENTER      &trans                    &trans
+                        &mo 5   &trans  &kp SPACE        &kp ENTER      &trans                    &trans
             >;
+        };
+
+        ij_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "IntelliJ";
+        };
+
+        sys_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "System";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
