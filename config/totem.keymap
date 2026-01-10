@@ -180,10 +180,10 @@
 
         ij_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans             &trans      &trans          &kp LS(F6)     &kp LG(LS(T))    &trans            &kp LA(F7)     &trans  &trans             &kp LG(LA(P))
+        &kp LG(LA(LS(A)))  &kp LG(F6)  &kp LA(LS(F5))  &trans         &trans           &kp LG(LA(LEFT))  &kp LC(LS(J))  &trans  &kp LG(LA(RIGHT))  &trans
+&trans  &trans             &trans      &trans          &kp LG(LA(V))  &trans           &kp LG(LA(N))     &kp LA(LS(M))  &trans  &trans             &trans         &trans
+                                       &trans          &trans         &trans           &trans            &trans         &trans
             >;
 
             label = "IntelliJ";
@@ -198,6 +198,17 @@
             >;
 
             label = "System";
+        };
+
+        gaming_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Gaming";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
