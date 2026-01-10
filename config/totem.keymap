@@ -29,7 +29,21 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        gaming_toggle {
+            bindings = <&tog 6>;
+            key-positions = <26 27 28>;
+            layers = <0>;
+        };
+
+        base_toggle {
+            bindings = <&tog 0>;
+            key-positions = <26 27 28>;
+            layers = <6>;
+        };
+    };
 
     behaviors {
         lp: lp {
