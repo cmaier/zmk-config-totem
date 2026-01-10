@@ -200,7 +200,7 @@
             label = "System";
         };
 
-        gaming_layer {
+        game_layer {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
