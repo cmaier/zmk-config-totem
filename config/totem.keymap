@@ -3,10 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    hold-while-undecided;
-    hold-trigger-on-release;
     tapping-term-ms = <300>;
     quick-tap-ms = <260>;
+    flavor = "hold-preferred";
 };
 
 / {
