@@ -58,6 +58,17 @@
         };
     };
 
+    macros {
+        double_shift: double_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+            label = "DOUBLE_SHIFT";
+            wait-ms = <40>;
+            tap-ms = <40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -108,7 +119,7 @@
         ij_layer {
             bindings = <
         &trans             &trans      &trans          &kp LS(F6)     &kp LG(LS(T))    &trans            &kp LA(F7)     &trans  &trans             &kp LG(LA(P))
-        &kp LG(LA(LS(A)))  &kp LG(F6)  &kp LA(LS(F5))  &trans         &trans           &kp LG(LA(LEFT))  &kp LC(LS(J))  &trans  &kp LG(LA(RIGHT))  &trans
+        &kp LG(LA(LS(A)))  &kp LG(F6)  &kp LA(LS(F5))  &trans         &trans           &kp LG(LA(LEFT))  &kp LC(LS(J))  &trans  &kp LG(LA(RIGHT))  &double_shift
 &trans  &trans             &trans      &trans          &kp LG(LA(V))  &trans           &kp LG(LA(N))     &kp LA(LS(M))  &trans  &trans             &trans         &trans
                                        &trans          &trans         &trans           &trans            &trans         &trans
             >;
