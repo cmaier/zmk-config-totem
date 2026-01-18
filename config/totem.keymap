@@ -141,7 +141,7 @@
         game_layer {
             bindings = <
         &kp TAB    &kp Q  &kp W         &kp E         &kp R        &trans  &trans  &trans  &trans  &trans
-        &kp CAPS   &kp A  &kp S         &kp D         &kp F        &trans  &trans  &trans  &trans  &trans
+        &kp F13    &kp A  &kp S         &kp D         &kp F        &trans  &trans  &trans  &trans  &trans
 &trans  &kp LSHFT  &kp Z  &kp X         &kp C         &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                           &kp NUMBER_1  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
             >;
