@@ -74,10 +74,10 @@
 
         base_layer {
             bindings = <
-            &kp Q          &kp W         &kp E        &lp LG(R) R  &lp LG(T) T    &kp Y            &kp U        &kp I        &kp O         &kp P
-            &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G          &kp H            &hmr RGUI J  &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMICOLON
-&kp ESCAPE  &kp Z          &kp X         &lp LG(C) C  &lp LG(V) V  &kp B          &lp LG(N) N      &kp M        &kp COMMA    &kp DOT       &kp FSLH              &kp SQT
-                                         &mo 4        &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &kp DELETE
+            &kp Q          &kp W         &kp E        &lp LG(R) R  &lp LG(T) T    &kp Y            &kp U        &kp I         &kp O         &kp P
+            &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G          &kp H            &hmr RGUI J  &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMICOLON
+&kp ESCAPE  &kp Z          &kp X         &lp LG(C) C  &lp LG(V) V  &kp B          &lp LG(N) N      &kp M        &kp COMMA     &kp DOT       &kp FSLH              &kp SQT
+                                         &mo 4        &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &lt 4 DELETE
             >;
 
             label = "Base";
