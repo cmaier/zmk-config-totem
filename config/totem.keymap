@@ -72,10 +72,10 @@
 
         base_layer {
             bindings = <
-        &kp Q          &kp W         &kp E         &lp LG(R) R  &lp LG(T) T    &kp Y            &kp U        &kp I         &kp O         &kp P
-        &hml LSHIFT A  &hml LCTRL S  &hml LALT D   &hml LGUI F  &kp G          &kp H            &hmr RGUI J  &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMICOLON
-&trans  &kp Z          &kp X         &lp LG(C) C   &lp LG(V) V  &kp B          &lp LG(N) N      &kp M        &kp COMMA     &kp DOT       &kp FSLH              &trans
-                                     &lt 4 ESCAPE  &lt 2 TAB    &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &lt 4 DELETE
+        &kp Q          &kp W         &kp E        &lp LG(R) R   &lp LG(T) T    &kp Y            &kp U        &kp I         &kp O         &kp P
+        &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F   &kp G          &kp H            &hmr RGUI J  &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMICOLON
+&trans  &kp Z          &kp X         &lp LG(C) C  &lp LG(V) V   &kp B          &lp LG(N) N      &kp M        &kp COMMA     &kp DOT       &kp FSLH              &trans
+                                     &lt 4 TAB    &lt 2 ESCAPE  &lt 3 SPACE    &lt 3 BACKSPACE  &mo 1        &lt 4 DELETE
             >;
 
             label = "Base";
@@ -83,9 +83,9 @@
 
         sym_layer {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp STAR
+        &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES
         &kp CARET        &kp AMPS     &kp STAR   &kp GRAVE   &kp TILDE      &kp EQUAL  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE
-&trans  &kp BACKSLASH    &trans       &trans     &trans      &trans         &kp PLUS   &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE          &trans
+&trans  &kp BACKSLASH    &trans       &trans     &trans      &trans         &kp PLUS   &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &trans
                                       &trans     &trans      &trans         &trans     &trans         &trans
             >;
 
