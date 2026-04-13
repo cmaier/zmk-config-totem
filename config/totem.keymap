@@ -81,26 +81,26 @@
             label = "Base";
         };
 
-        sym_layer {
+        rsym_layer {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-        &kp CARET        &kp AMPS     &kp STAR   &kp GRAVE   &kp TILDE      &kp EQUAL  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE
-&trans  &kp BACKSLASH    &trans       &trans     &trans      &trans         &kp PLUS   &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &trans
-                                      &trans     &trans      &trans         &trans     &trans         &trans
+        &trans  &kp N7  &kp N8  &kp N9  &trans    &kp CARET  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+        &trans  &kp N4  &kp N5  &kp N6  &trans    &kp EQUAL  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE
+&trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans    &kp PLUS   &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &trans
+                        &trans  &trans  &trans    &trans     &trans         &trans
             >;
 
-            label = "Symbols";
+            label = "RightSymbols";
         };
 
-        tkf_layer {
+        lsym_layer {
             bindings = <
-        &trans        &kp N7        &kp N8        &kp NUMBER_9  &trans    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-        &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &kp F11  &kp F12  &trans  &trans  &trans   &trans
-                                    &trans        &trans        &trans    &trans   &trans   &trans
+        &kp EXCLAMATION  &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+        &kp CARET        &kp AMPS  &kp ASTRK  &kp GRAVE   &kp TILDE      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &kp BACKSLASH    &trans    &trans     &trans      &trans         &kp F11  &kp F12  &trans  &trans  &trans   &trans
+                                   &trans     &trans      &trans         &trans   &trans   &trans
             >;
 
-            label = "TenKFun";
+            label = "LeftSymbols";
         };
 
         sfn_layer {
@@ -138,10 +138,10 @@
 
         game_layer {
             bindings = <
-        &kp TAB    &kp Q  &kp W         &kp E         &kp R        &trans  &trans  &trans  &trans  &trans
-        &kp F13    &kp A  &kp S         &kp D         &kp F        &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT  &kp Z  &kp X         &kp C         &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp NUMBER_1  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
+       &kp TAB    &kp Q  &kp N2        &kp E         &kp R        &trans  &trans  &trans  &trans  &trans
+       &kp F7     &kp A  &kp W         &kp D         &kp F        &trans  &trans  &trans  &trans  &trans
+&kp X  &kp LSHFT  &kp Z  &kp S         &kp C         &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp NUMBER_1  &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "Gaming";
