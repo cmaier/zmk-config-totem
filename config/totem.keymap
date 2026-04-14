@@ -89,7 +89,7 @@
                         &trans  &trans  &trans    &trans     &trans         &trans
             >;
 
-            label = "RightSymbols";
+            label = "RSym";
         };
 
         lsym_layer {
@@ -100,7 +100,7 @@
                                    &trans     &trans      &trans         &trans   &trans   &trans
             >;
 
-            label = "LeftSymbols";
+            label = "LSym";
         };
 
         sfn_layer {
