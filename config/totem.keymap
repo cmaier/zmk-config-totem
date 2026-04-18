@@ -117,8 +117,8 @@
         ij_layer {
             bindings = <
         &trans             &trans      &kp LC(LS(A))   &kp LS(F6)     &kp LG(LS(T))    &trans            &kp LA(F7)        &trans          &trans             &kp LG(LA(P))
-        &kp LG(LA(LS(A)))  &kp LG(F6)  &kp LA(LS(F5))  &kp LGUI       &trans           &kp LG(LA(LEFT))  &kp LA(LS(DOWN))  &kp LA(LS(UP))  &kp LG(LA(RIGHT))  &double_shift
-&trans  &trans             &trans      &trans          &kp LG(LA(V))  &trans           &kp LG(LA(N))     &kp LG(LA(M))     &kp LC(LS(J))   &trans             &trans         &trans
+        &kp LG(LA(LS(A)))  &kp LG(F6)  &kp LA(LS(F5))  &kp LGUI       &trans           &kp LG(LA(LEFT))  &kp LA(LS(DOWN))  &kp LA(LS(UP))  &kp LG(LA(RIGHT))  &trans
+&trans  &trans             &trans      &trans          &kp LG(LA(V))  &trans           &kp LG(LA(N))     &kp LG(LA(M))     &kp LC(LS(J))   &trans             &double_shift  &trans
                                        &trans          &trans         &trans           &trans            &trans            &trans
             >;
 
