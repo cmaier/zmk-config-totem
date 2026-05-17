@@ -16,6 +16,26 @@
             bindings = <&tog 6>;
             key-positions = <26 27 28>;
         };
+
+        LSys {
+            bindings = <&mo 5>;
+            key-positions = <32 33 34>;
+        };
+
+        RSys {
+            bindings = <&mo 5>;
+            key-positions = <35 36 37>;
+        };
+
+        LIJ {
+            bindings = <&mo 4>;
+            key-positions = <32 34>;
+        };
+
+        RIJ {
+            bindings = <&mo 4>;
+            key-positions = <35 37>;
+        };
     };
 
     behaviors {
